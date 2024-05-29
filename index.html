@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(233, 203, 163, 0.84);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box {
+      width: 45%;
+      height: 100%;
+      background-color: whitesmoke;
+      margin-top: 7%;
+      border-radius: 20px;
+      padding: 2%;
+    }
+
+    .omeltte-img {
+      width: 100%;
+      height: 40%;
+    }
+
+    .omeltte-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .recipie {
+      margin: 25px 0px 25px 0px;
+    }
+
+    .recipie-time {
+      width: 100%;
+      height: 30%;
+      padding: 3%;
+      border-radius: 15px;
+      background-color: #f4e3f6c0;
+      margin-top: 3%
+    }
+
+    .recipie-time h3 {
+      color: #412249;
+    }
+
+    ul {
+      padding-left: 5%;
+      margin-top: 2%;
+    }
+
+    ul li {
+      margin-bottom: 2%;
+      font-size: 18px;
+    }
+
+    ol {
+      padding-left: 5%;
+      margin-top: 2%;
+    }
+
+    ol li {
+      margin-bottom: 2%;
+      font-size: 18px;
+    }
+
+    .bullet {
+      list-style: none;
+      /* Remove default bullets */
+      padding-left: 20px;
+      /* Add padding to the left for the custom bullets */
+    }
+
+    .bullet li {
+      position: relative;
+      /* Position relative for pseudo-element positioning */
+      padding-left: 20px;
+      /* Space for the custom bullet */
+    }
+
+    .bullet li::before {
+      content: '•';
+      /* Unicode for bullet point */
+      color: #412249;
+      /* Change this to any color you like */
+      position: absolute;
+      /* Position it absolutely */
+      left: 0;
+      /* Align it to the left */
+      font-size: 20px;
+      /* Adjust the size as needed */
+      line-height: 1;
+      /* Line height adjustment */
+    }
+
+    .ingred {
+      list-style: none;
+      /* Remove default bullets */
+      padding-left: 20px;
+      /* Add padding to the left for the custom bullets */
+    }
+
+    .ingred li {
+      position: relative;
+      /* Position relative for pseudo-element positioning */
+      padding-left: 20px;
+      /* Space for the custom bullet */
+    }
+
+    .ingred li::before {
+      content: '•';
+      /* Unicode for bullet point */
+      color: rgb(164, 96, 8);
+      /* Change this to any color you like */
+      position: absolute;
+      /* Position it absolutely */
+      left: 0;
+      /* Align it to the left */
+      font-size: 20px;
+      /* Adjust the size as needed */
+      line-height: 1;
+      /* Line height adjustment */
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .ingredients,
+    .instructions {
+      margin-bottom: 5%;
+    }
+
+    .ingredients h1 {
+      margin-top: 3%;
+      margin-bottom: 3%;
+      color: rgb(164, 96, 8);
+    }
+
+    .instructions h1 {
+      margin-top: 3%;
+      margin-bottom: 3%;
+      color: rgb(164, 96, 8);
+    }
+
+    .nutrition h1 {
+      margin-top: 3%;
+      margin-bottom: 3%;
+      color: rgb(164, 96, 8);
+    }
+
+    .table-data {
+      width: 100%;
+      height: 100%;
+      /* background-color: aqua; */
+      margin: 2.5% 0%;
+      font-size: 18px;
+      display: flex;
+    
+    }
+
+    .data1 {
+      width: 50%;
+      justify-self: center;
+      padding-left: 10%;
+    }
+
+    .data2 {
+      font-weight: bold;
+      color: rgb(164, 96, 8);
+      width: 50%;
+    }
+
+    @media only screen and (max-width:768px){
+      .box{
+        width: 100%;
+        margin-top: 0%;
+      border-radius: 0px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="omeltte-img">
+        <img src="assets/images/image-omelette.jpeg" alt="">
+      </div>
+      <div class="recipie">
+        <div class="recipie-heading">
+          <h1>Simple Omelette Recipie</h1>
+          <p>An omelette is a versatile and delicious dish that can be enjoyed at any time of the day. Whether you're
+            looking for a quick breakfast, a light lunch, or a satisfying dinner, a well-made omelette never
+            disappoints. This recipe will guide you through the steps to create a perfect, fluffy omelette every time,
+            with tips for customization to suit your taste.</p>
+
+          <div class="recipie-time">
+            <h3>Prepration Time</h3>
+            <ul class="bullet">
+              <li><strong>Total: </strong>Approximately 10 Minutes</li>
+              <li><strong>Prepration: </strong>5 Minutes</li>
+              <li><strong>Cooking: </strong>5 Minutes</li>
+            </ul>
+          </div>
+          <div class="ingredients">
+            <h1>Ingredients</h1>
+            <p>For a basic omelette, you will need:</p>
+            <ul class="ingred">
+              <li>3 large eggs</li>
+              <li>2 tablespoons milk or water</li>
+              <li>Salt and pepper to taste</li>
+              <li>1 tablespoon butter or oil</li>
+            </ul>
+            <p>Optional fillings:</p>
+            <ul class="ingred">
+              <li>Cheese (cheddar, mozzarella, feta, etc.)</li>
+              <li>Vegetables (bell peppers, onions, spinach, mushrooms, tomatoes)</li>
+              <li>Proteins (ham, bacon, sausage, smoked salmon)</li>
+              <li>Herbs (chives, parsley, dill)</li>
+            </ul>
+          </div>
+          <hr>
+
+          <div class="instructions">
+            <h1>Instructions</h1>
+            <ol>
+              <li><strong>Prepare the Ingredients:</strong>
+                <ul>
+                  <li>Crack the eggs into a mixing bowl. Add the milk or water, a pinch of salt, and a grind of pepper.
+                  </li>
+                  <li>Whisk the eggs vigorously until the mixture is well combined and slightly frothy. This will
+                    incorporate air into the eggs, making the omelette fluffier.</li>
+                  <li>If you're using fillings, chop the vegetables, grate the cheese, and prepare any meats in advance.
+                  </li>
+                </ul>
+              </li>
+
+              <li><strong>Cook the Omelette:</strong>
+                <ul>
+                  <li>Heat a non-stick skillet over medium-high heat. Add the butter or oil and let it melt and coat the
+                    pan evenly.</li>
+                  <li>Pour the egg mixture into the pan. Let it cook undisturbed for about 10-15 seconds.</li>
+                  <li>Using a spatula, gently stir the eggs, pushing them from the edges towards the center. Tilt the
+                    pan to let the uncooked eggs flow to the edges.</li>
+                  <li>When the eggs are mostly set but still slightly runny on top, add your desired fillings evenly
+                    over one half of the omelette.</li>
+                </ul>
+              </li>
+              <li><strong>Fold and Serve:</strong>
+                <ul>
+                  <li>Carefully fold the omelette in half using the spatula. Let it cook for another 30 seconds to 1
+                    minute, depending on how well-done you like your eggs.</li>
+                  <li>Slide the omelette onto a plate and serve immediately.</li>
+                </ul>
+              </li>
+            </ol>
+          </div>
+          <hr>
+          <div class="nutrition">
+            <h1>Nutrition</h1>
+            <p>The table below shows nutritional value per serving without the additional fillings.</p>
+
+            <div class="table">
+              <div class="table-data">
+                <div class="data1">
+                  <p>Calories</p>
+                </div>
+                <div class="data2">277kcal</div>
+              </div>
+              <hr>
+              <div class="table-data">
+                <div class="data1">
+                  <p>Carbs</p>
+                </div>
+                <div class="data2">0g</div>
+              </div>
+              <hr>
+              <div class="table-data">
+                <div class="data1">
+                  <p>Protein</p>
+                </div>
+                <div class="data2">20g</div>
+              </div>
+              <hr>
+              <div class="table-data">
+                <div class="data1">
+                  <p>Fat</p>
+                </div>
+                <div class="data2">22g</div>
+              </div>
+              <hr>
+
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
